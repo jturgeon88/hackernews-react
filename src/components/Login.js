@@ -20,8 +20,8 @@ const LOGIN_MUTATION = gql`
 `
 
 class Login extends Component {
-  state ={
-    login: true, // allows us to switch between Login and Signup
+  state = {
+    login: true, // switch between Login and SignUp
     email: '',
     password: '',
     name: '',
@@ -31,7 +31,7 @@ class Login extends Component {
     const { login, email, password, name } = this.state
     return (
       <div>
-        <h4 className="mv3">{login ? 'Login' : 'Signup'}</h4>
+        <h4 className="mv3">{login ? 'Login' : 'Sign Up'}</h4>
         <div className="flex flex-column">
           {!login && (
             <input
